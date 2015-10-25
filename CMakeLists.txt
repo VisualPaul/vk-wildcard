@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(VKWild)
+list(APPEND CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS} -O2 -Wall -Wextra -Wconversion")
+add_executable(main graph.cpp language.cpp likeness.cpp main.cpp)
+add_executable(getResult getresult.cc)
